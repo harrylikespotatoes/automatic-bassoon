@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "dedes css",
+  "version": "69.42.0",
+  "description": "just a css",
+  "icons": {
+      "128": "icecoob.png",
+      "16": "icecoob.png",
+      "48": "icecoob.png"
+   },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [ "html/html1.html"],
+      "matches": [ "*://deeds.cgs.vic.edu.au/*" ]
+    }
+  ],
+
+  "permissions": ["activeTab", "storage"],
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "matches": ["*://deeds.cgs.vic.edu.au/*"]
+  }]
+
+}

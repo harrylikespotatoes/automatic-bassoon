@@ -1,0 +1,89 @@
+/*
+nope
+
+*/
+
+:root {
+  --background: #1d1f21; /* This colour is used as the background for the main homepages. */
+  --text: white; /* The colour of text */
+  --middleground: #2a2c2f;
+  --lightblue: #03a9f4;
+}
+
+#container, .button, div.card.small-12.sibling, blockquote, div.small-12.island, label#notification-toggle-full
+ .list-item.flex-grade, article, div.card.small-12, #footer.clearfix, ul, .main, div.list-item {
+  background-color: var(--background) !important;
+}
+
+h3 {
+  color: var(--lightblue) !important;
+}
+
+img[alt="View Profile"]{
+  content: url(https://raw.githubusercontent.com/traumatram/deeds-cord/main/extension/assets/icecoob.png) !important;
+}
+
+img[alt="Camberwell Grammar School"] {
+  content: url()
+}
+
+img, a {
+  border-radius: 3px !important;
+}
+
+
+a.submit.button.full-width {
+  background-color: var(--middleground) !important;
+}
+
+blockquote, span.pipe.meta, li {
+  color: var(--text) !important;
+}
+
+div.grade.gradient-10-bg, div.grade.gradient-9-bg, div.grade.gradient-8-bg, div.grade.gradient-7-bg, div.grade.gradient-6-bg, div.grade.gradient-5-bg,
+ div.grade.gradient-4-bg, div.grade.gradient-3-bg, div.grade.gradient-2-bg, div.grade.gradient-1-bg, div.grade.gradient-0-bg {
+
+}
+
+a {
+  color: var(--lightblue) !important;
+}
+
+h1 {
+  color: var(--text) !important;
+}
+
+.timetable-subject {
+  color: var(--text) !important;
+  background-color: var(--middleground) !important;
+}
+
+th {
+  background-color: var(--middleground) !important;
+  color: var(--text) !important;
+}
+
+/* Notification List */
+a#notification-toggle.right-off-canvas-toggle.icon-notifications, b, p.meta.spaced {
+  background-color: var(--background) !important;
+  color: var(--text) !important;
+  z-index: -100000 !important;
+}
+
+.compact.card.wrap-down.small-12 {
+  background-color: var(--background) !important;
+  color: var(--text) !important;
+}
+
+.right-off-canvas-menu {
+  background: var(--background) !important;
+}
+
+a.exit-off-canvas:hover {
+  opacity: 0 !important;
+}
+
+a#right-menu-dock.right-menu-dock.show-for-xlarge-up:hover {
+  background-color: none !important;
+  background: none !important;
+}
