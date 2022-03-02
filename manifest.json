@@ -20,7 +20,7 @@
 
   "permissions": ["activeTab", "storage"],
   "content_scripts": [{
-    "css": ["styles.css"],
+    "css": ["main.css"],
     "matches": ["*://deeds.cgs.vic.edu.au/*"]
   }]
 

@@ -15,16 +15,12 @@ nope
   background-color: var(--background) !important;
 }
 
-h3 {
-  color: var(--lightblue) !important;
+td {
+  background-color: var(--middleground) !important;
 }
 
 img[alt="View Profile"]{
-  content: url(https://raw.githubusercontent.com/traumatram/deeds-cord/main/extension/assets/icecoob.png) !important;
-}
-
-img[alt="Camberwell Grammar School"] {
-  content: url()
+  content: url(https://raw.githubusercontent.com/traumatram/automatic-bassoon/main/icecoob.png) !important;
 }
 
 img, a {
@@ -53,6 +49,14 @@ h1 {
   color: var(--text) !important;
 }
 
+h2 {
+  color: var(--text) !important;
+}
+
+h3 {
+  color: var(--lightblue) !important;
+}
+
 .timetable-subject {
   color: var(--text) !important;
   background-color: var(--middleground) !important;
@@ -64,10 +68,14 @@ th {
 }
 
 /* Notification List */
-a#notification-toggle.right-off-canvas-toggle.icon-notifications, b, p.meta.spaced {
+b, p.meta.spaced {
   background-color: var(--background) !important;
   color: var(--text) !important;
   z-index: -100000 !important;
+}
+
+span[title="View Messages"], #notification-toggle.right-off-canvas-toggle.icon-notifications::before {
+  color: var(--text) !important;
 }
 
 .compact.card.wrap-down.small-12 {
@@ -81,6 +89,13 @@ a#notification-toggle.right-off-canvas-toggle.icon-notifications, b, p.meta.spac
 
 a.exit-off-canvas:hover {
   opacity: 0 !important;
+}
+
+/* Calendar */
+div.fc-list-day-cushion.fc-cell-shaded {
+  background-color: var(--middleground) !important;
+  color: var(--text) !important;
+
 }
 
 a#right-menu-dock.right-menu-dock.show-for-xlarge-up:hover {
