@@ -1,5 +1,7 @@
 /*
-nope
+
+you're free to use this, change it, and not credit anybody
+that's why it's an MIT license
 
 */
 
@@ -37,6 +39,10 @@ img, a, a.tile-link {
   border-radius: 3px !important;
 }
 
+::placeholder {
+  color: var(--text) !important;
+}
+
 select#context-selector-semester, select#context-selector-subject {
   color: var(--text) !important;
 }
@@ -60,9 +66,13 @@ div.grade.gradient-10-bg, div.grade.gradient-9-bg, div.grade.gradient-8-bg, div.
    background-color: #4fa74f !important;
 }
 
+/* Links */
 a {
   color: var(--lightblue) !important;
 }
+
+
+/* Special Text */
 
 h1 {
   color: var(--text) !important;
@@ -74,6 +84,10 @@ h2 {
 
 h3 {
   color: var(--lightblue) !important;
+}
+
+span {
+  color: var(--text) !important;
 }
 
 /* Timetable */
@@ -92,11 +106,28 @@ th.timetable-day-active {
   background-color: var(--lightgrey) !important;
 }
 
+/* Classes */
+div.small-12.medium-6.large-4.xlarge-3.island {
+  margin: 10px;
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Search Box */
+input#search-field {
+  background-color: var(--background) !important;
+  color: var(--text) !important;
+}
+
 /* Notification List */
-b, p.meta.spaced {
+b, p.meta.spaced, #notification-toggle.right-off-canvas-toggle.icon-notifications {
   background-color: var(--background) !important;
   color: var(--text) !important;
   z-index: -100000 !important;
+} a.icon
+
+a#notification-toggle.right-off-canvas-toggle.icon-notifications:hover {
+  background-color: var(--lightgrey) !important;
 }
 
 span[title="View Messages"], #notification-toggle.right-off-canvas-toggle.icon-notifications::before {
@@ -139,7 +170,7 @@ a.icon-due-work.navthis,
 a.icon-timetable.navthis,
 a.icon-calendar.navthis,
 a.icon-news.navthis,
-a.icon-approve.navthis,
+a.icon-approve.navthis
  {
   background-color: var(--lightgrey) !important;
 }
