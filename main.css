@@ -7,24 +7,43 @@ nope
   --background: #1d1f21; /* This colour is used as the background for the main homepages. */
   --text: white; /* The colour of text */
   --middleground: #2a2c2f;
+  --lightgrey: #3d3f44;
   --lightblue: #03a9f4;
 }
 
-#container, .button, div.card.small-12.sibling, blockquote, div.small-12.island, label#notification-toggle-full
- .list-item.flex-grade, article, div.card.small-12, #footer.clearfix, ul, .main, div.list-item {
+#container, .button, div.card.small-12.sibling, blockquote, div.small-12.island, label#notification-toggle-full, div.semester,
+select#context-selector-semester, select#context-selector-subject, .list-item.flex-grade, article,
+div.card.small-12, #footer.clearfix, ul, .main, div.list-item, li.assessment, div.flex-grade, div.subject,
+div.reveal-modal, span.spacer, section, hr, ul {
   background-color: var(--background) !important;
+}
+
+p {
+  color: var(--text) !important;
 }
 
 td {
   background-color: var(--middleground) !important;
+  color: var(--text) !important;
 }
 
-img[alt="View Profile"]{
-  content: url(https://raw.githubusercontent.com/traumatram/automatic-bassoon/main/icecoob.png) !important;
+img[title="View Profile"]{
+  content: url(https://deeds.cgs.vic.edu.au/images/fail.php?transform_type=portrait&transform=square64&code=500) !important;
 }
 
-img, a {
+/* change this to whatever you want, just paste in the image link instead of a generic profile picture */
+
+img, a, a.tile-link {
   border-radius: 3px !important;
+}
+
+select#context-selector-semester, select#context-selector-subject {
+  color: var(--text) !important;
+}
+
+/* Class Page */
+div.small-12.large-4.column.column-right {
+  background-color: var(--background) !important;
 }
 
 
@@ -38,7 +57,7 @@ blockquote, span.pipe.meta, li {
 
 div.grade.gradient-10-bg, div.grade.gradient-9-bg, div.grade.gradient-8-bg, div.grade.gradient-7-bg, div.grade.gradient-6-bg, div.grade.gradient-5-bg,
  div.grade.gradient-4-bg, div.grade.gradient-3-bg, div.grade.gradient-2-bg, div.grade.gradient-1-bg, div.grade.gradient-0-bg {
-
+   background-color: #4fa74f !important;
 }
 
 a {
@@ -57,6 +76,8 @@ h3 {
   color: var(--lightblue) !important;
 }
 
+/* Timetable */
+
 .timetable-subject {
   color: var(--text) !important;
   background-color: var(--middleground) !important;
@@ -65,6 +86,10 @@ h3 {
 th {
   background-color: var(--middleground) !important;
   color: var(--text) !important;
+}
+
+th.timetable-day-active {
+  background-color: var(--lightgrey) !important;
 }
 
 /* Notification List */
@@ -101,4 +126,26 @@ div.fc-list-day-cushion.fc-cell-shaded {
 a#right-menu-dock.right-menu-dock.show-for-xlarge-up:hover {
   background-color: none !important;
   background: none !important;
+}
+
+/* Topbar *//*
+.icon-comment[title="EducationPerfect"] {
+  content: url(https://raw.githubusercontent.com/traumatram/automatic-bassoon/main/screenshots/ep_logo.png) !important;
+}
+*/
+
+a.icon-teacher.navthis,
+a.icon-due-work.navthis,
+a.icon-timetable.navthis,
+a.icon-calendar.navthis,
+a.icon-news.navthis,
+a.icon-approve.navthis,
+ {
+  background-color: var(--lightgrey) !important;
+}
+
+/* Social Stream */
+
+.editPanel.socialstream-new-post {
+  background-color: var(--middleground) !important;
 }
