@@ -1,9 +1,51 @@
-/*
-
-you're free to use this, change it, and not credit anybody
-that's why it's an MIT license
-
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 :root {
   --background: #1d1f21; /* This colour is used as the background for the main homepages. */
@@ -13,11 +55,17 @@ that's why it's an MIT license
   --lightblue: #03a9f4;
 }
 
+
+/* Fixing colours */
 #container, .button, div.card.small-12.sibling, blockquote, div.small-12.island, label#notification-toggle-full, div.semester,
 select#context-selector-semester, select#context-selector-subject, .list-item.flex-grade, article,
 div.card.small-12, #footer.clearfix, ul, .main, div.list-item, li.assessment, div.flex-grade, div.subject,
 div.reveal-modal, span.spacer, section, hr, ul {
   background-color: var(--background) !important;
+}
+
+div.empty-state {
+  background-color: var(--middleground) !important;
 }
 
 p {
@@ -29,10 +77,16 @@ td {
   color: var(--text) !important;
 }
 
+/* your face and co */
+
+a.icon, li.separator, a.icon-staff-and-students, a.icon-settings, a.icon-logout {
+  background-color: var(--background) !important;
+  color: var(--text) !important;
+}
+
 img[title="View Profile"]{
   content: url(https://deeds.cgs.vic.edu.au/images/fail.php?transform_type=portrait&transform=square64&code=500) !important;
 }
-
 /* change this to whatever you want, just paste in the image link instead of a generic profile picture */
 
 img, a, a.tile-link {
@@ -47,12 +101,6 @@ select#context-selector-semester, select#context-selector-subject {
   color: var(--text) !important;
 }
 
-/* Class Page */
-div.small-12.large-4.column.column-right {
-  background-color: var(--background) !important;
-}
-
-
 a.submit.button.full-width {
   background-color: var(--middleground) !important;
 }
@@ -61,8 +109,10 @@ blockquote, span.pipe.meta, li {
   color: var(--text) !important;
 }
 
-div.grade.gradient-10-bg, div.grade.gradient-9-bg, div.grade.gradient-8-bg, div.grade.gradient-7-bg, div.grade.gradient-6-bg, div.grade.gradient-5-bg,
- div.grade.gradient-4-bg, div.grade.gradient-3-bg, div.grade.gradient-2-bg, div.grade.gradient-1-bg, div.grade.gradient-0-bg {
+div.grade.gradient-10-bg, div.grade.gradient-9-bg, div.grade.gradient-8-bg,
+div.grade.gradient-7-bg, div.grade.gradient-6-bg, div.grade.gradient-5-bg,
+ div.grade.gradient-4-bg, div.grade.gradient-3-bg, div.grade.gradient-2-bg,
+ div.grade.gradient-1-bg, div.grade.gradient-0-bg {
    background-color: #4fa74f !important;
 }
 
@@ -70,7 +120,6 @@ div.grade.gradient-10-bg, div.grade.gradient-9-bg, div.grade.gradient-8-bg, div.
 a {
   color: var(--lightblue) !important;
 }
-
 
 /* Special Text */
 
@@ -112,6 +161,12 @@ div.small-12.medium-6.large-4.xlarge-3.island {
   width: 250px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+div.small-12.large-4.column.column-right {
+  background-color: var(--background) !important;
+}
+
+
 
 /* Search Box */
 input#search-field {
@@ -159,11 +214,7 @@ a#right-menu-dock.right-menu-dock.show-for-xlarge-up:hover {
   background: none !important;
 }
 
-/* Topbar *//*
-.icon-comment[title="EducationPerfect"] {
-  content: url(https://raw.githubusercontent.com/traumatram/automatic-bassoon/main/screenshots/ep_logo.png) !important;
-}
-*/
+
 
 a.icon-teacher.navthis,
 a.icon-due-work.navthis,
@@ -180,3 +231,10 @@ a.icon-approve.navthis
 .editPanel.socialstream-new-post {
   background-color: var(--middleground) !important;
 }
+
+/* EXPERIMENTATION */
+/* Topbar *//*
+.icon-comment[title="EducationPerfect"] {
+  content: url(https://raw.githubusercontent.com/traumatram/automatic-bassoon/main/screenshots/ep_logo.png) !important;
+}
+*/

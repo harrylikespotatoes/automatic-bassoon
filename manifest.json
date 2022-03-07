@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "dedes css",
-  "version": "69.42.0",
+  "version": "0.01",
   "description": "just a css",
   "icons": {
       "128": "icecoob.png",
@@ -21,7 +21,8 @@
   "permissions": ["activeTab", "storage"],
   "content_scripts": [{
     "css": ["main.css"],
-    "matches": ["*://deeds.cgs.vic.edu.au/*"]
+    "matches": ["*://deeds.cgs.vic.edu.au/*"],
+    "exclude_matches" : ["*://deeds.cgs.vic.edu.au/homepage/2164/", "*://deeds.cgs.vic.edu.au/homepage/2138/"]
   }]
 
 }
