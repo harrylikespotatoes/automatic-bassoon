@@ -77,7 +77,12 @@ td {
   color: var(--text) !important;
 }
 
-/* your face and co */
+/* left menu */
+body > div#off-canvas-wrap.off-canvas-wrap.move-right:nth-child(1) > div#inner-wrap.inner-wrap.right-open > aside#left-menu.left-off-canvas-menu.hide-for-print:nth-child(1) > div.logo-wrapper:nth-child(2) > a.logo {
+	content: url("")
+}
+
+/* top right drop down menu */
 
 a.icon, li.separator, a.icon-staff-and-students, a.icon-settings, a.icon-logout {
   background-color: var(--background) !important;
@@ -165,8 +170,6 @@ div.small-12.medium-6.large-4.xlarge-3.island {
 div.small-12.large-4.column.column-right {
   background-color: var(--background) !important;
 }
-
-
 
 /* Search Box */
 input#search-field {
